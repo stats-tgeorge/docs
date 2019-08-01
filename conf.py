@@ -19,7 +19,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'JOSS'
+project = 'OPENJOURNALS'
 copyright = '2018, Open Journals'
 author = 'Arfon Smith & Open Journals community'
 

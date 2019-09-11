@@ -75,7 +75,7 @@ If it can't find the `paper.md` file it will say as much in the review issue. If
 .. note:: If you want to see what command ``@whedon`` is running when compiling the paper, take a look at the code `here <https://github.com/openjournals/whedon/blob/195e6d124d0fbd5346b87659e695325df9a18334/lib/whedon/processor.rb#L109-L132>`_.
 ```
 
-Anyone can ask `@whedon` to compile the paper again (e.g. after a change has been made). To do this simply comment on the review thread as follows:
+Anyone can ask `@whedon` to compile the paper again (e.g., after a change has been made). To do this simply comment on the review thread as follows:
 
 ```text
 @whedon generate pdf
@@ -160,16 +160,16 @@ Whedon can reminders authors and reviewers after a specified amount of time to r
 ```
 
 ```eval_rst
-.. note:: Most units of times are understood by Whedon e.g. `hour/hours/day/days/week/weeks`.
+.. note:: Most units of times are understood by Whedon, e.g., `hour/hours/day/days/week/weeks`.
 ```
 
 ```eval_rst
-.. important:: For reviewers, the reminder will only be triggered if the reviewer's review is outstanding (i.e. outstanding checkboxes).
+.. important:: For reviewers, the reminder will only be triggered if the reviewer's review is outstanding (i.e., outstanding checkboxes).
 ```
 
 ### Setting the software archive
 
-When a submission is accepted, we ask that the authors create an archive (on [Zenodo](https://zenodo.org/), [fig**share**](https://figshare.com/), or other) and post the archive DOI in the `REVIEW` issue. The editor should add the `accepted` label on the issue and ask `@whedon` to add the archive to the issue as follows:
+When a submission is accepted, we ask that the authors create an archive (on [Zenodo](https://zenodo.org/), [figshare](https://figshare.com/), or other) and post the archive DOI in the `REVIEW` issue. The editor should add the `accepted` label on the issue and ask `@whedon` to add the archive to the issue as follows:
 
 ```text
 @whedon set 10.0000/zenodo.00000 as archive
@@ -202,7 +202,7 @@ On issuing this command, Whedon will also check the references of the paper for 
 ```
 
 ```eval_rst
-.. note:: Whedon can verify that DOIs resolve, but cannot verify that the DOI associated with a paper is actually correct. In addition, DOI suggestions from Whedon are just that - i.e. they may not be correct.
+.. note:: Whedon can verify that DOIs resolve, but cannot verify that the DOI associated with a paper is actually correct. In addition, DOI suggestions from Whedon are just that---i.e., they may not be correct.
 ```
 
 ## Accepting a paper (for real)

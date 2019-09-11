@@ -4,6 +4,24 @@ Submitting a paper to JOSS
 If you've already developed a fully featured research code, released it under an [OSI-approved license](https://opensource.org/licenses), and written good documentation and tests, then we expect that it should take perhaps an hour or two to prepare and submit your paper to JOSS.
 But please read these instructions carefully for a streamlined submission.
 
+## Submission requirements
+
+- The software should be open source as per the [OSI definition](https://opensource.org/osd).
+- The software should have an **obvious** research application.
+- You should be a major contributor to the software you are submitting.
+- The software should be a significant contribution to the available open source software that either enables some new research challenges to be addressed or makes addressing research challenges significantly better (e.g., faster, easier, simpler).
+- The software should be feature-complete (no half-baked solutions) and designed for maintainable extension (not one-off modifications). **Minor ‘utility’ packages, including ‘thin’ API clients, are not acceptable**.
+- Your paper (`paper.md` and BibTeX files, plus any figures) must be hosted in a Git-based repository, ideally together with your software.
+
+In addition, the software associated with your submission must:
+
+- Be stored in a repository that can be cloned without registration.
+- Be stored in a repository that is browsable online without registration.
+- Have an issue tracker that is readable without registration.
+- Permit individuals to create issues/file tickets against your repository.
+
+JOSS publishes articles about research software. This definition includes software that: solves complex modeling problems in a scientific context (physics, mathematics, biology, medicine, social science, neuroscience, engineering); supports the functioning of research instruments or the execution of research experiments; extracts knowledge from large data sets; offers a mathematical library, or similar.
+
 ## Typical paper submission flow
 
 Before you submit, you should:
@@ -12,7 +30,6 @@ Before you submit, you should:
 - Make sure that the software complies with the [JOSS review criteria](review_criteria.html). In particular, your software should be full-featured, well-documented, and contain procedures (such as automated tests) for checking correctness.
 - Write a short paper in Markdown format using `paper.md` as file name, including a title, summary, author names, affiliations, and key references. See our [example paper](#example-paper-and-bibliography) to follow the correct format.
 - (Optional) create a metadata file describing your software and include it in your repository. We provide [a script](https://gist.github.com/arfon/478b2ed49e11f984d6fb) that automates the generation of this metadata.
-
 
 ## What should my paper contain?
 
@@ -55,8 +72,7 @@ authors:
   - name: Adrian M. Price-Whelan
     orcid: 0000-0003-0872-7098
     affiliation: "1, 2" # (Multiple affiliations must be quoted)
-  - name: Author 2
-    orcid: 0000-0000-0000-0000
+  - name: Author Without ORCID
     affiliation: 2
 affiliations:
  - name: Lyman Spitzer, Jr. Fellow, Princeton University
@@ -65,6 +81,11 @@ affiliations:
    index: 2
 date: 13 August 2017
 bibliography: paper.bib
+
+# Optional fields if submitting to a AAS journal too, see this blog post:
+# https://blog.joss.theoj.org/2018/12/a-new-collaboration-with-aas-publishing
+aas-doi: 10.3847/xxxxx <- update this with the DOI from AAS once you know it.
+aas-journal: Astrophysical Journal <- The name of the AAS journal.
 ---
 
 # Summary
@@ -200,27 +221,15 @@ Submission is as simple as:
 - Filling in the [short submission form](http://joss.theoj.org/papers/new)
 - Waiting for the managing editor to start a pre-review issue over in the JOSS reviews repository: https://github.com/openjournals/joss-reviews
 
-## Submission requirements
-
-- The software should be open source as per the [OSI definition](https://opensource.org/osd).
-- The software should have an **obvious** research application.
-- You should be a major contributor to the software you are submitting.
-- The software should be a significant contribution to the available open source software that either enables some new research challenges to be addressed or makes addressing research challenges significantly better (e.g., faster, easier, simpler).
-- The software should be feature-complete (no half-baked solutions) and designed for maintainable extension (not one-off modifications). Minor ‘utility’ packages, including ‘thin’ API clients, are not acceptable.
-- Your paper (`paper.md` and BibTeX files, plus any figures) must be hosted in a Git-based repository.
-
-In addition, the software associated with your submission must:
-
-- Be stored in a repository that can be cloned without registration.
-- Be stored in a repository that is browsable online without registration.
-- Have an issue tracker that is readable without registration.
-- Permit individuals to create issues/file tickets against your repository.
-
-JOSS publishes articles about research software. This definition includes software that: solves complex modeling problems in a scientific context (physics, mathematics, biology, medicine, social science, neuroscience, engineering); supports the functioning of research instruments or the execution of research experiments; extracts knowledge from large data sets; offers a mathematical library, or similar.
-
 ## No submission fees
 
 There are no fees for submitting or publishing in JOSS. You can read more about our [cost and sustainability model](http://joss.theoj.org/about#costs).
+
+## Preprint Policy
+
+Authors are welcome to submit their papers to a preprint server ([arXiv](https://arxiv.org/), [bioRxiv](https://www.biorxiv.org/), [SocArXiv](https://socopen.org/), [PsyArXiv](https://psyarxiv.com/) etc.) at any point during the submission and review process.
+
+Submission to a preprint server is _not_ considered a previous publication.
 
 ## Authorship
 
@@ -228,7 +237,7 @@ Purely financial (such as being named on an award) and organizational (such as g
 
 ## Submissions using proprietary languages/dev environments
 
-We strongly prefer software that doesn't rely upon proprietary (paid for) development environments/programming languages. However, provided _your submission meets our requirements (including having a valid open source license) then we will consider your submission for review. Should your submission be accepted for review, we may ask you, the submitting author, to help us find reviewers who already have the required development environment installed.
+We strongly prefer software that doesn't rely upon proprietary (paid for) development environments/programming languages. However, provided _your submission meets our requirements_ (including having a valid open source license) then we will consider your submission for review. Should your submission be accepted for review, we may ask you, the submitting author, to help us find reviewers who already have the required development environment installed.
 
 ## The review process
 

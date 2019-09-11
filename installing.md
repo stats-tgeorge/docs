@@ -1,4 +1,4 @@
-Installing the JOSS application
+Installing the JOSE application
 ===============================
 
 To be written...

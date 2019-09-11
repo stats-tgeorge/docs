@@ -20,7 +20,7 @@
 # -- Project information -----------------------------------------------------
 
 project = 'OPENJOURNALS'
-copyright = '2018, Open Journals'
+copyright = '2019, Open Journals'
 author = 'Arfon Smith & Open Journals community'
 
 # The short X.Y version
@@ -138,7 +138,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'JOSS.tex', 'JOSS Documentation',
+    (master_doc, 'JOSE.tex', 'JOSE Documentation',
      'Open Journals', 'manual'),
 ]
 
@@ -148,7 +148,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'joss', 'JOSS Documentation',
+    (master_doc, 'jose', 'JOSE Documentation',
      [author], 1)
 ]
 
@@ -159,8 +159,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'JOSS', 'JOSS Documentation',
-     author, 'JOSS', 'One line description of project.',
+    (master_doc, 'JOSE', 'JOSE Documentation',
+     author, 'JOSE', 'One line description of project.',
      'Miscellaneous'),
 ]
 

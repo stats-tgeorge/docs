@@ -1,63 +1,87 @@
-Submitting a paper to JOSS
+Submitting a paper to JOSE
 ==========================
 
-If you've already developed a fully featured research code, released it under an [OSI-approved license](https://opensource.org/licenses), and written good documentation and tests, then we expect that it should take perhaps an hour or two to prepare and submit your paper to JOSS.
-But please read these instructions carefully for a streamlined submission.
+Preparing your JOSE submission should be a simple task, once you have a complete
+software or learning module you wish to publish.
+
+## The two submission types
+
+JOSE accepts two types of submissions: (1) computational learning modules, created as open educational resources (OER), and (2) open-source software, created as educational technology or infrastructure.
 
 ## Submission requirements
 
-- The software should be open source as per the [OSI definition](https://opensource.org/osd).
-- The software should have an **obvious** research application.
-- You should be a major contributor to the software you are submitting.
-- The software should be a significant contribution to the available open source software that either enables some new research challenges to be addressed or makes addressing research challenges significantly better (e.g., faster, easier, simpler).
-- The software should be feature-complete (no half-baked solutions) and designed for maintainable extension (not one-off modifications). **Minor ‘utility’ packages, including ‘thin’ API clients, are not acceptable**.
-- Your paper (`paper.md` and BibTeX files, plus any figures) must be hosted in a Git-based repository, ideally together with your software.
+JOSE submissions must be fully open, under the [Open Definition](http://opendefinition.org/).
+This means that any text content or graphical objects should be under a
+Creative Commons license (ideally [CC-BY](https://creativecommons.org/licenses/by/4.0/))
+and code components should be under an [OSI-approved license](https://opensource.org/licenses).
 
-In addition, the software associated with your submission must:
+Computational learning modules should be complete and immediately usable for
+self-learning or adoption by other instructors. They should make a clear
+contribution to teaching and learning of any subject, supported by computing.
+JOSE is not focused in OER for "learning to code" as much as "coding to learn."
 
-- Be stored in a repository that can be cloned without registration.
-- Be stored in a repository that is browsable online without registration.
-- Have an issue tracker that is readable without registration.
-- Permit individuals to create issues/file tickets against your repository.
+Software submissions should make a clear contribution to the available open-source software that supports teaching and learning, or makes an educational process better (e.g., faster, easier, simpler). Examples include software to auto-grade student work, learning management systems, and student collaboration frameworks. Software should be feature-complete (no half-baked solutions).
 
-JOSS publishes articles about research software. This definition includes software that: solves complex modeling problems in a scientific context (physics, mathematics, biology, medicine, social science, neuroscience, engineering); supports the functioning of research instruments or the execution of research experiments; extracts knowledge from large data sets; offers a mathematical library, or similar.
+## What about novelty?
 
-## Typical paper submission flow
+Authors make the case for their submission's contribution in the paper, under the
+heading "Statement of Need." The criterion is less one of novelty, than need:
+submissions targeting subjects or applications already addressed by other resources
+are eligible, if the authors make a case for why they might be adopted by learners
+or other instructors. For example, authors could say that they approach a topic
+differently, that they update material to modern contexts, that the need is born of
+a new educational program, or a conference tutorial or other informal-learning scenario.
 
-Before you submit, you should:
+## How to prepare a software submission?
 
-- Make your software available in an open repository (GitHub, Bitbucket, etc.) and include an [OSI approved open source license](https://opensource.org/licenses).
-- Make sure that the software complies with the [JOSS review criteria](review_criteria.html). In particular, your software should be full-featured, well-documented, and contain procedures (such as automated tests) for checking correctness.
-- Write a short paper in Markdown format using `paper.md` as file name, including a title, summary, author names, affiliations, and key references. See our [example paper](#example-paper-and-bibliography) to follow the correct format.
-- (Optional) create a metadata file describing your software and include it in your repository. We provide [a script](https://gist.github.com/arfon/478b2ed49e11f984d6fb) that automates the generation of this metadata.
+Before starting your submission, you should:
+
+- Have the software available in an open repository (GitHub, Bitbucket, etc.) under an [OSI-approved license](https://opensource.org/licenses).
+- Write a short Markdown file titled `paper.md` with title, author names and affiliations, containing a description of the software, statement of need, and key references.
+- References should be included in a BibTeX file called `paper.bib`
+
+Once you have those items in place, [submit](https://jose.theoj.org/papers/new) via the JOSE web app.
+
+## How to prepare a learning-module submission?
+
+Before starting your submission, you should:
+
+- Have the content in an open repository, under a Creative Commons license (ideally CC-BY), and any code components under an [OSI-approved license](https://opensource.org/licenses).
+- Write a short Markdown file titled `paper.md` with title, author names and affiliations, containing a description of the module, a summary of its contents, a statement of need, and key references.
+- References should be included in a BibTeX file called `paper.bib`
+
+Once you have those items in place, [submit](https://jose.theoj.org/papers/new) via the JOSE web app.
 
 ## What should my paper contain?
 
-```eval_rst
-.. important:: Begin your paper with a summary of the high-level functionality of your software for a non-specialist reader. Avoid jargon in this section.
-```
+JOSE papers should:
 
-JOSS welcomes submissions from broadly diverse research areas. For this reason, we require that authors include in the paper some sentences that explain the software functionality and domain of use to a non-specialist reader. We also require that authors explain the research applications of the software. The paper should be between 250-1000 words.
+- List all authors and affiliations.
+- Describe the submission, and explain its eligibility for JOSE.
+- Include a "Statement of Need" section, explaining how the submitted artifacts contribute to computationally enabled teaching and learning, and describing how they might be adopted by others.
+- For software submissions, describe the functionality of the software, usage and recent experience of use in teaching and learning situations.
+- For learning modules, describe the learning objectives, content, instructional design, and experience of use in teaching and learning situations.
+- Tell us the "story" of the project: how did it come to be?
+- Cite key references, including a link to the open archive of the sofware or the learning module.
 
+JOSE welcomes submissions with diverse educational contexts. You should write your
+paper for a non-specialist reader. Your submission should probably be around 1000
+words (or around two pages).
 
-Your paper should include:
+The goal is that someone reading the JOSE paper has enough information to decide
+if they'd be interested in adoping the learnig module or software. Readers will
+want to know how the content/software has been used, and how they would adopt it.
+They may also want to be persuaded that the authors have put careful work on
+creating the material, and have experience teaching with it.
 
-- A list of the authors of the software and their affiliations, using the correct format (see the example below).
-- A summary describing the high-level functionality and purpose of the software for a diverse, *non-specialist audience*.
-- A clear *Statement of Need* that illustrates the research purpose of the software.
-- A list of key references, including to other software addressing related needs.
-- Mention (if applicable) of any past or ongoing research projects using the software and recent scholarly publications enabled by it.
-- Acknowledgement of any financial support.
-
-As this short list shows, JOSS papers are only expected to contain a limited set of metadata (see example below), a Statement of Need, Summary, Acknowledgements, and References sections. You can look at an [example accepted paper](http://bit.ly/2x22gxT). Given this format, a "full length" paper is not permitted, and software documentation such as API (Application Programming Interface) functionality should not be in the paper and instead should be outlined in the software documentation.
-
-```eval_rst
-.. important:: Your paper will be reviewed by two or more reviewers in a public GitHub issue. Take a look at the `review checklist <review_checklist.html>`_ and  `review criteria <review_criteria.html>`_ to better understand how your submission will be reviewed.
-```
+JOSE papers contain a limited set of metadata, plus Summary & Reference sections.
+We explicitly do not publish long-form articles, because the scholarship represented
+by a JOSE article is contained in the software or learning modules themselves.
+Expected length is around 1000 words max.
 
 ## Example paper and bibliography
 
-This example `paper.md` is adapted from _Gala: A Python package for galactic dynamics_ by Adrian M. Price-Whelan [http://doi.org/10.21105/joss.00388](http://doi.org/10.21105/joss.00388):
+This example `paper.md` is adapted from the JOSS paper _Gala: A Python package for galactic dynamics_ by Adrian M. Price-Whelan [http://doi.org/10.21105/joss.00388](http://doi.org/10.21105/joss.00388):
 
 ```
 ---
@@ -212,18 +236,20 @@ Example `paper.bib` file:
 }
 ```
 
-Note that the paper ends with a References heading, and the references are built automatically from the content in the `.bib` file. You should enter in-text citations in the paper body following correct [Markdown citation syntax](https://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html#citation_syntax).
+Note that the paper ends with a References heading, and the references are built
+automatically from the content in the `.bib` file. You should enter in-text
+citations in the paper body following correct [Markdown citation syntax](https://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html#citation_syntax).
 
 ## Submitting your paper
 
 Submission is as simple as:
 
-- Filling in the [short submission form](http://joss.theoj.org/papers/new)
-- Waiting for the managing editor to start a pre-review issue over in the JOSS reviews repository: https://github.com/openjournals/joss-reviews
+- Filling in the [short submission form](http://jose.theoj.org/papers/new)
+- Waiting for the managing editor to start a pre-review issue over in the JOSS reviews repository: https://github.com/openjournals/jose-reviews
 
 ## No submission fees
 
-There are no fees for submitting or publishing in JOSS. You can read more about our [cost and sustainability model](http://joss.theoj.org/about#costs).
+There are no fees for submitting or publishing in JOSE. You can read more about our [cost and sustainability model](http://joss.theoj.org/about#costs).
 
 ## Preprint Policy
 
@@ -233,7 +259,7 @@ Submission to a preprint server is _not_ considered a previous publication.
 
 ## Authorship
 
-Purely financial (such as being named on an award) and organizational (such as general supervision of a research group) contributions are not considered sufficient for co-authorship of JOSS submissions, but active project direction and other forms of non-code contributions are. The authors themselves assume responsibility for deciding who should be credited with co-authorship, and co-authors must always agree to be listed. In addition, co-authors agree to be accountable for all aspects of the work, and to notify JOSS if any retraction or correction of mistakes are needed after publication.
+Purely financial (such as being named on an award) and organizational (such as general supervision of a research group) contributions are not considered sufficient for co-authorship of JOSE submissions, but active project direction and other forms of non-code contributions are. The authors themselves assume responsibility for deciding who should be credited with co-authorship, and co-authors must always agree to be listed. In addition, co-authors agree to be accountable for all aspects of the work, and to notify JOSE if any retraction or correction of mistakes are needed after publication.
 
 ## Submissions using proprietary languages/dev environments
 
@@ -241,13 +267,15 @@ We strongly prefer software that doesn't rely upon proprietary (paid for) develo
 
 ## The review process
 
+We encourage you to familiarize yourself with our [review criteria](review_criteria.html) as this will help you understand what our reviewers will be looking for. Broadly speaking though, provided you have followed our pre-submission steps and meet our submission requirements then you should expect a rapid review (typically less than two weeks).
+
 After submission:
 
-- An Associate Editor-in-Chief will carry out an initial check of your submission, and proceed to assign a handling editor.
-- The handling editor will assign two or more JOSS reviewers, and the review will be carried out in the [JOSS reviews repository](https://github.com/openjournals/joss-reviews).
+- The Editor-in-Chief will carry out an initial check of your submission, and proceed to assign a handling editor.
+- The handling editor will assign two or more JOSE reviewers, and the review will be carried out in the [JOSE reviews repository](https://github.com/openjournals/jose-reviews).
 - Authors will respond to reviewer-raised issues (if any are raised) on the submission repository's issue tracker. Reviewer and editor contributions, like any other contributions, should be acknowledged in the repository.
-- Upon successful completion of the review, authors will make a tagged release of the software, and deposit a copy of the repository with a data-archiving service such as [Zenodo](https://zenodo.org/) or [figshare](https://figshare.com/), get a DOI for the archive, and update the review issue thread with the version number and DOI.
-- After we assign a DOI for your accepted JOSS paper, its metadata is deposited with CrossRef and listed on the JOSS website.
-- The review issue will be closed, and an automatic tweet from [@JOSS_TheOJ](https://twitter.com/JOSS_TheOJ) will announce it!
+- Upon successful completion of the review, deposit a copy of your (updated) repository with a data-archiving service such as [Zenodo](https://zenodo.org/) or [figshare](https://figshare.com/), get a DOI for the archive, and update the review issue thread with the DOI.
+- After we assign a DOI for your accepted JOSE paper, its metadata is deposited with CrossRef and listed on the JOSE website.
+- The review issue will be closed, and an automatic tweet from [@JOSE_TheOJ](https://twitter.com/JOSE_TheOJ) will announce it!
 
 If you want to learn more details about the review process, take a look at the [reviewer guidelines](reviewer_guidelines.html).

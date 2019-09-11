@@ -31,7 +31,7 @@ should be under an [OSI-approved license](https://opensource.org/licenses/alphab
 License information must be clearly visible in the submission's online repository,
 which must include a plain-text `LICENSE` file.
 
-> **Acceptable:** A plain-text `LICENSE` file with the contents of an OSI-approved license<br />            
+> **Acceptable:** A plain-text `LICENSE` file with the contents of an OSI-approved license<br />
 > **Not acceptable:** A phrase such as 'MIT license' in a `README` file
 
 ### Statement of need
@@ -55,8 +55,8 @@ guidelines for potential contributors who may want to:
 
 **Examples:** Potential users of new software rely on well-documented examples to get started. Reviewers will look for examples of use that illustrate beginner and advanced functionality
 
-> **Good**: A package management file such as a `Gemfile` or `package.json` or equivalent
-> **OK**: A list of dependencies to install
+> **Good**: A package management file such as a `Gemfile` or `package.json` or equivalent<br />
+> **OK**: A list of dependencies to install<br />
 > **Bad (not acceptable)**: Reliance on other software not listed by the authors
 
 ### Specific requirements for learning modules

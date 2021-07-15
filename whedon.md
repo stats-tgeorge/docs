@@ -90,12 +90,12 @@ A subset of the Whedon commands are available to authors (and reviewers):
 
 ### Compiling papers
 
-When a `pre-review` or `review` issue is opened, `@whedon` will try to compile the JOSS paper by looking for a `paper.md` file in the repository specified when the paper was submitted.
+When a `pre-review` or `review` issue is opened, `@whedon` will try to compile the JOSE paper by looking for a `paper.md` file in the repository specified when the paper was submitted.
 
 If it can't find the `paper.md` file it will say as much in the review issue. If it can't compile the paper (i.e. there's some kind of Pandoc error), it will try and report that error back in the thread too.
 
 ```eval_rst
-.. note:: If you want to see what command ``@whedon`` is running when compiling the JOSS paper, take a look at the code `here <https://github.com/openjournals/whedon/blob/195e6d124d0fbd5346b87659e695325df9a18334/lib/whedon/processor.rb#L109-L132>`_.
+.. note:: If you want to see what command ``@whedon`` is running when compiling the JOSE paper, take a look at the code `here <https://github.com/openjournals/whedon/blob/195e6d124d0fbd5346b87659e695325df9a18334/lib/whedon/processor.rb#L109-L132>`_.
 ```
 
 Anyone can ask `@whedon` to compile the paper again (e.g. after a change has been made). To do this simply comment on the review thread as follows:
@@ -114,7 +114,7 @@ By default, Whedon will look for papers in the default git branch. If you want t
 
 ### Finding reviewers
 
-Sometimes submitting authors suggest people the think might be appropriate to review their submission. If you want the link to the current list of JOSS reviewers, type the following in the review thread:
+Sometimes submitting authors suggest people the think might be appropriate to review their submission. If you want the link to the current list of JOSE reviewers, type the following in the review thread:
 
 ```text
 @whedon list reviewers
@@ -220,7 +220,7 @@ Sometimes the version of the software changes as a consequence of the review pro
 
 Whedon can accept a paper from the review issue. This includes generating the final paper PDF, Crossref metedata, and depositing this metadata with the Crossref API.
 
-JOSS topic editors can ask for the final proofs to be created by Whedon with the following command:
+JOSE topic editors can ask for the final proofs to be created by Whedon with the following command:
 
 ```text
 @whedon recommend-accept
@@ -240,12 +240,12 @@ On issuing this command, Whedon will also check the references of the paper for 
 
 ## Accepting a paper (for real)
 
-If everything looks good with the draft proofs from the `@whedon accept` command, JOSS editors-in-chief can take the additional step of actually accepting the JOSS paper with the following command:
+If everything looks good with the draft proofs from the `@whedon accept` command, JOSE editors-in-chief can take the additional step of actually accepting the JOSE paper with the following command:
 
 ```text
 @whedon accept deposit=true
 ```
 
 ```eval_rst
-.. note:: This command is only available to the JOSS editor-in-chief, or associate editors-in-chief.
+.. note:: This command is only available to the JOSE editor-in-chief, or associate editors-in-chief.
 ```

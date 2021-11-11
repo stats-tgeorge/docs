@@ -1,7 +1,7 @@
 Editorial Guide
 ===============
 
-The Journal of Open Source Software (JOSS) conducts all peer review and editorial processes in the open, on the GitHub issue tracker.
+The Journal of Open Source Education (JOSE) conducts all peer review and editorial processes in the open, on the GitHub issue tracker.
 
 JOSS editors manage the review workflow with the help of our bot, `@whedon`. The bot is summoned with commands typed directly on the GitHub review issues. For a list of commands, type: `@whedon commands`.
 
@@ -27,7 +27,7 @@ The EiC assigns an editor (or a volunteering editor self-assigns) with the comma
 
 By default, unless an editor volunteers, the Associated Editor-in-chief (AEiC) on duty will attempt to assign an incoming paper to the most suitable handling editor. While AEiCs will make every effort to match a submission with the most appropriate editor, there are a number of situations where an AEiC may assign a paper to an editor that doesn't fit entirely within the editor's research domains:
 
-- If there's no obvious fit to _any_ of the JOSS editors
+- If there's no obvious fit to _any_ of the JOSE editors
 - If the most suitable editor is already handling a large number of papers
 - If the chosen editor has a lighter editorial load than other editors
 
@@ -35,7 +35,7 @@ In most cases, an AEiC will ask one or more editors to edit a submission (e.g. `
 
 ### Finding reviewers
 
-At this point, the handling editor's job is to identify reviewers who have sufficient expertise in the field of software and in the field of the submission. JOSS papers have to have a minimum of two reviewers per submission, except for papers that have previously been peer-reviewed via rOpenSci. In some cases, the editor also might want to formally add themself as one of the reviewers. If the editor feels particularly unsure of the submission, a third (or fourth) reviewer can be recruited.
+At this point, the handling editor's job is to identify reviewers who have sufficient expertise in the field of software and in the field of the submission. JOSE papers have to have a minimum of two reviewers per submission, except for papers that have previously been peer-reviewed via rOpenSci. In some cases, the editor also might want to formally add themself as one of the reviewers. If the editor feels particularly unsure of the submission, a third (or fourth) reviewer can be recruited.
 
 To recruit reviewers, the handling editor can mention them in the `PRE-REVIEW` issue with their GitHub handle, ping them on Twitter, or email them. After expressing initial interest, candidate reviewers may need a longer explanation via email. See sample reviewer invitation email, below.
 
@@ -97,33 +97,33 @@ If a paper has already been reviewed and accepted by rOpenSci, the streamlined J
 Dear Dr. Jekyll,
 
 I found you following links from the page of The Super Project and/or on Twitter. This
-message is to ask if you can help us out with a submission to JOSS (The Journal of Open
-Source Software), where I’m an editor.
+message is to ask if you can help us out with a submission to JOSE (The Journal of Open
+Source Education), where I’m an editor.
 
-JOSS publishes articles about open source research software. The submission I'd like you
+JOSE publishes articles about open source research software. The submission I'd like you
 to review is titled: "great software name here"
 
 and the submission repository is at: https://github.com/< … >
 
-JOSS is a free, open-source, community driven and developer-friendly online journal
+JOSE is a free, open-source, community driven and developer-friendly online journal
 (no publisher is seeking to raise revenue from the volunteer labor of researchers!).
 
 The review process at JOSS is unique: it is open and author-reviewer-editor conversations
 are encouraged.
 
-JOSS reviews involve downloading and installing the software, and inspecting the repository
+JOSE reviews involve downloading and installing the software, and inspecting the repository
 and submitted paper for key elements. See https://joss.readthedocs.io/en/latest/review_criteria.html
 
 Editors and reviewers post comments on the Review issue, and authors respond to the comments
 and improve their submission until acceptance (or withdrawal, if they feel unable to
 satisfy the review).
 
-Would you be able to review this submission for JOSS? If not, can you recommend
+Would you be able to review this submission for JOSE? If not, can you recommend
 someone from your team to help out?
 
 Kind regards,
 
-JOSS Editor.
+JOSE Editor.
 ```
 
 ## Overview of editorial process
@@ -168,7 +168,7 @@ This doesn’t mean that you’re the editor, just that you’ve been suggested 
 
 **Step 9: Close the pre-review issue**
 
-**Step 10: The actual JOSS review**
+**Step 10: The actual JOSE review**
 
 - The reviewer reviews the paper and has a conversation with the author. The editor lurks on this conversation and comes in if needed for questions (or CoC issues).
 - The reviewer potentially asks for changes and the author makes changes. Everyone agrees it’s ready.
@@ -183,7 +183,7 @@ This doesn’t mean that you’re the editor, just that you’ve been suggested 
 
 ![Editorial flow](images/JOSS-flowchart.png)
 
-## Expectations on JOSS editors
+## Expectations on JOSE editors
 
 ### Responding to editorial assignments
 
@@ -205,7 +205,7 @@ Sometimes reviews go quiet, either because a reviewer has failed to complete the
 
 ## Out of office
 
-Sometimes we need time away from our editing duties at JOSS. The [joss-reviews](https://github.com/openjournals/joss-reviews) repository has the [OoO bot](https://github.com/swinton/probot-ooo) installed which means you can mark yourself as out of the office (and unable to respond to reviews) for a period of time e.g.:
+Sometimes we need time away from our editing duties at JOSE. The [joss-reviews](https://github.com/openjournals/joss-reviews) repository has the [OoO bot](https://github.com/swinton/probot-ooo) installed which means you can mark yourself as out of the office (and unable to respond to reviews) for a period of time e.g.:
 
 Mark yourself as OoO in one of the reviews you're editing in the [joss-reviews](https://github.com/openjournals/joss-reviews) repository like this:
 

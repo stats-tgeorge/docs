@@ -3,7 +3,7 @@ Editorial Guide
 
 The Journal of Open Source Education (JOSE) conducts all peer review and editorial processes in the open, on the GitHub issue tracker.
 
-JOSS editors manage the review workflow with the help of our bot, `@whedon`. The bot is summoned with commands typed directly on the GitHub review issues. For a list of commands, type: `@whedon commands`.
+JOSE editors manage the review workflow with the help of our bot, `@whedon`. The bot is summoned with commands typed directly on the GitHub review issues. For a list of commands, type: `@whedon commands`.
 
 ```eval_rst
 .. note:: To learn more about ``@whedon``'s functionalities, take a look at our `dedicated guide <whedon.html>`_.
@@ -14,7 +14,7 @@ JOSS editors manage the review workflow with the help of our bot, `@whedon`. The
 Once a submission comes in, it will be in the queue for a quick check by the Editor-in-chief (EiC). From there, it moves to a `PRE-REVIEW` issue, where the EiC will assign a handling editor, and the author can suggest reviewers. Initial direction to the authors for improving the paper can already happen here, especially if the paper lacks some requested sections.
 
 ```eval_rst
-.. important:: If the paper is out-of-scope for JOSS, editors assess this and notify the author in the ``PRE-REVIEW`` issue.
+.. important:: If the paper is out-of-scope for JOSE, editors assess this and notify the author in the ``PRE-REVIEW`` issue.
 ```
 
 The EiC assigns an editor (or a volunteering editor self-assigns) with the command `@whedon assign @username as editor` in a comment.
@@ -31,7 +31,7 @@ By default, unless an editor volunteers, the Associated Editor-in-chief (AEiC) o
 - If the most suitable editor is already handling a large number of papers
 - If the chosen editor has a lighter editorial load than other editors
 
-In most cases, an AEiC will ask one or more editors to edit a submission (e.g. `@editor1, @editor 2 - would one of you be willing to edit this submission for JOSS`). If the editor doesn't respond within ~3 working days, the AEiC may assign the paper to the editor regardless.
+In most cases, an AEiC will ask one or more editors to edit a submission (e.g. `@editor1, @editor 2 - would one of you be willing to edit this submission for JOSE`). If the editor doesn't respond within ~3 working days, the AEiC may assign the paper to the editor regardless.
 
 ### Finding reviewers
 
@@ -72,7 +72,7 @@ Steps:
 - Check the Zenodo deposit has the correct metadata (title and author list), and request the author edit it if it doesn’t match the paper.
 - Run `@whedon set <doi> as archive`.
 - Run `@whedon set <v1.x.x> as version` if the version was updated.
-- Ping the `@openjournals/joss-eics` team on the review thread letting them know the paper is ready to be accepted.
+- Ping the `@openjournals/jose-eics` team on the review thread letting them know the paper is ready to be accepted.
 
 At that point, the EiC/AEiC will take over to publish the paper.
 
@@ -80,7 +80,7 @@ It’s also a good idea to ask the authors to check the proof. We’ve had a few
 
 ## Processing of rOpenSci-reviewed and accepted submissions
 
-If a paper has already been reviewed and accepted by rOpenSci, the streamlined JOSS review process is:
+If a paper has already been reviewed and accepted by rOpenSci, the streamlined JOSE review process is:
 
 - Assign yourself as editor and reviewer
 - Add a comment in the pre-review issue pointing to the rOpenSci review
@@ -108,11 +108,11 @@ and the submission repository is at: https://github.com/< … >
 JOSE is a free, open-source, community driven and developer-friendly online journal
 (no publisher is seeking to raise revenue from the volunteer labor of researchers!).
 
-The review process at JOSS is unique: it is open and author-reviewer-editor conversations
+The review process at JOSE is unique: it is open and author-reviewer-editor conversations
 are encouraged.
 
 JOSE reviews involve downloading and installing the software, and inspecting the repository
-and submitted paper for key elements. See https://joss.readthedocs.io/en/latest/review_criteria.html
+and submitted paper for key elements. See https://jose.readthedocs.io/en/latest/review_criteria.html
 
 Editors and reviewers post comments on the Review issue, and authors respond to the comments
 and improve their submission until acceptance (or withdrawal, if they feel unable to
@@ -149,8 +149,8 @@ This doesn’t mean that you’re the editor, just that you’ve been suggested 
 **Step 6: The editor finds >= 2 reviewers**
 
 - Use the list of reviewers: type the command `@whedon list reviewers` or look at list of reviewers in a Google [spreadsheet](https://docs.google.com/spreadsheets/d/1PAPRJ63yq9aPC1COLjaQp8mHmEq3rZUzwUYxTulyu78/edit?usp=sharing)
-- If people are in the review list, the editor can @-mention them on the issue to see if they will review: e.g. `@person1 @person2 can you review this submission for JOSS?`
-- Or solicit reviewers outside the list. Send an email to people describing what JOSS is and asking if they would be interested in reviewing.
+- If people are in the review list, the editor can @-mention them on the issue to see if they will review: e.g. `@person1 @person2 can you review this submission for JOSE?`
+- Or solicit reviewers outside the list. Send an email to people describing what JOSE is and asking if they would be interested in reviewing.
 
 **Step 7: Editor tells Whedon to assign the reviewer to the paper**
 
@@ -164,7 +164,7 @@ This doesn’t mean that you’re the editor, just that you’ve been suggested 
 **Step 8: Create the actual review issue**
 
 - Use `@whedon start review`
-- An issue is created with the review checklist, one per reviewer, e.g. https://github.com/openjournals/joss-reviews/issues/717
+- An issue is created with the review checklist, one per reviewer, e.g. https://github.com/openjournals/jose-reviews/issues/117
 
 **Step 9: Close the pre-review issue**
 
@@ -175,7 +175,7 @@ This doesn’t mean that you’re the editor, just that you’ve been suggested 
 
 **Step 11: The editor pings the EiC team to get the paper published**
 
-- To get the paper published, ping the `@openjournals/joss-eics` team on the review thread letting them know the paper is ready to be accepted.
+- To get the paper published, ping the `@openjournals/jose-eics` team on the review thread letting them know the paper is ready to be accepted.
 
 **Step 12: Celebrate publication! Tweet! Thank reviewers! Say thank you on issue.**
 
@@ -191,13 +191,13 @@ As documented above, usually, papers will be assigned to you by one of the AEiCs
 
 ### Continued attention to assigned submissions
 
-As an editor, part of your role is to ensure that submissions you're responsible for are progressing smoothly through the editorial process. This means that once or twice per week we ask that you check your GitHub notifications and/or your editorial dashboard (e.g. `http://joss.theoj.org/dashboard/youreditorname`) for updates to the papers you are handling.
+As an editor, part of your role is to ensure that submissions you're responsible for are progressing smoothly through the editorial process. This means that once or twice per week we ask that you check your GitHub notifications and/or your editorial dashboard (e.g. `http://jose.theoj.org/dashboard/youreditorname`) for updates to the papers you are handling.
 
 **If reviews go stale**
 
 Sometimes reviews go quiet, either because a reviewer has failed to complete their review or an author has been slow to respond to a reviewer's feedback. **As the editor, we need you to prompt the author/or reviewer(s) to revisit the submission if there has been no response within 7-10 days unless there's a clear statement in the review thread that says an action is coming at a slightly later time, perhaps because a reviewer committed to a review by a certain date, or an author is making changes and says they will be done by a certain date.**
 
-[Whedon has functionality](https://joss.readthedocs.io/en/latest/whedon.html#reminding-reviewers-and-authors) to remind an author or review to return to a review at a certain point in the future. For example:
+[Whedon has functionality](https://jose.readthedocs.io/en/latest/whedon.html#reminding-reviewers-and-authors) to remind an author or review to return to a review at a certain point in the future. For example:
 
 ```
 @whedon remind @reviewer in five days
@@ -205,14 +205,14 @@ Sometimes reviews go quiet, either because a reviewer has failed to complete the
 
 ## Out of office
 
-Sometimes we need time away from our editing duties at JOSE. The [joss-reviews](https://github.com/openjournals/joss-reviews) repository has the [OoO bot](https://github.com/swinton/probot-ooo) installed which means you can mark yourself as out of the office (and unable to respond to reviews) for a period of time e.g.:
+Sometimes we need time away from our editing duties at JOSE. The [jose-reviews](https://github.com/openjournals/jose-reviews) repository has the [OoO bot](https://github.com/swinton/probot-ooo) installed which means you can mark yourself as out of the office (and unable to respond to reviews) for a period of time e.g.:
 
-Mark yourself as OoO in one of the reviews you're editing in the [joss-reviews](https://github.com/openjournals/joss-reviews) repository like this:
+Mark yourself as OoO in one of the reviews you're editing in the [jose-reviews](https://github.com/openjournals/jose-reviews) repository like this:
 
 ```
 /ooo January 18 until February 2
 ```
 
-Ooo bot will then respond to any mentions in the [joss-reviews](https://github.com/openjournals/joss-reviews) repository to let people know you're away.
+Ooo bot will then respond to any mentions in the [jose-reviews](https://github.com/openjournals/jose-reviews) repository to let people know you're away.
 
-**Note, if you're planning on being out of the office for more than two weeks, please let the JOSS editorial team know.**
+**Note, if you're planning on being out of the office for more than two weeks, please let the JOSE editorial team know.**

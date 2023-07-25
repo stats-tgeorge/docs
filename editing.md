@@ -3,10 +3,10 @@ Editorial Guide
 
 The Journal of Open Source Software (JOSS) conducts all peer review and editorial processes in the open, on the GitHub issue tracker.
 
-JOSS editors manage the review workflow with the help of our bot, `@whedon`. The bot is summoned with commands typed directly on the GitHub review issues. For a list of commands, type: `@whedon commands`.
+JOSS editors manage the review workflow with the help of our bot, `@editorialbot`. The bot is summoned with commands typed directly on the GitHub review issues. For a list of commands, type: `@editorialbot commands`.
 
 ```eval_rst
-.. note:: To learn more about ``@whedon``'s functionalities, take a look at our `dedicated guide <whedon.html>`_.
+.. note:: To learn more about ``@editorialbot``'s functionalities, take a look at our `dedicated guide <editorial_bot.html>`_.
 ```
 
 ## Pre-review
@@ -17,10 +17,10 @@ Once a submission comes in, it will be in the queue for a quick check by the Edi
 .. important:: If the paper is out-of-scope for JOSS, editors assess this and notify the author in the ``PRE-REVIEW`` issue.
 ```
 
-The EiC assigns an editor (or a volunteering editor self-assigns) with the command `@whedon assign @username as editor` in a comment.
+The EiC assigns an editor (or a volunteering editor self-assigns) with the command `@editorialbot assign @username as editor` in a comment.
 
 ```eval_rst
-.. note:: If a paper is submitted without a recommended editor, it will show up in the weekly digest email under the category ‘Papers currently without an editor.’ Please review this weekly email and volunteer to edit papers that look to be in your domain. If you choose to be an editor in the issue thread type the command ``@whedon assign @yourhandle as editor``
+.. note:: If a paper is submitted without a recommended editor, it will show up in the weekly digest email under the category ‘Papers currently without an editor.’ Please review this weekly email and volunteer to edit papers that look to be in your domain. If you choose to be an editor in the issue thread type the command ``@editorialbot assign @yourhandle as editor``
 ```
 
 ### How papers are assigned to editors
@@ -39,7 +39,7 @@ At this point, the handling editor's job is to identify reviewers who have suffi
 
 To recruit reviewers, the handling editor can mention them in the `PRE-REVIEW` issue with their GitHub handle, ping them on Twitter, or email them. After expressing initial interest, candidate reviewers may need a longer explanation via email. See sample reviewer invitation email, below.
 
-Once a reviewer accepts, the handling editor runs the command `@whedon assign @username as reviewer` in the `PRE-REVIEW` issue. Add more reviewers with the command `@whedon add @username as reviewer`.
+Once a reviewer accepts, the handling editor runs the command `@editorialbot assign @username as reviewer` in the `PRE-REVIEW` issue. Add more reviewers with the command `@editorialbot add @username as reviewer`.
 
 ```eval_rst
 .. note:: The ``assign`` command clobbers all reviewer assignments. If you want to add an additional reviewer use the ``add`` command.
@@ -47,13 +47,13 @@ Once a reviewer accepts, the handling editor runs the command `@whedon assign @u
 
 ### Starting the review
 
-Next, run the command `@whedon start review`. If you haven't assigned an editor and reviewer, this command will fail and `@whedon` will tell you this. This will open the `REVIEW` issue, with prepared review checklists for each reviewer, and instructions. The editor should close the `PRE-REVIEW` issue, at this point, and move the conversation to the separate `REVIEW` issue.
+Next, run the command `@editorialbot start review`. If you haven't assigned an editor and reviewer, this command will fail and `@editorialbot` will tell you this. This will open the `REVIEW` issue, with prepared review checklists for each reviewer, and instructions. The editor should close the `PRE-REVIEW` issue, at this point, and move the conversation to the separate `REVIEW` issue.
 
 ## Review
 
 The `REVIEW` issue contains some instructions, and reviewer checklists. The reviewer(s) should check off items of the checklist one-by-one, until done. In the meantime, reviewers can engage the authors freely in a conversation aimed at improving the paper.
 
-If a reviewer recants their commitment or is unresponsive, editors can remove them with the command `@whedon remove @username as reviewer`. You can also add new reviewers in the `REVIEW` issue, but in this case, you need to manually add a review checklist for them by editing the issue body.
+If a reviewer recants their commitment or is unresponsive, editors can remove them with the command `@editorialbot remove @username as reviewer`. You can also add new reviewers in the `REVIEW` issue, but in this case, you need to manually add a review checklist for them by editing the issue body.
 
 Comments in the `REVIEW` issue should be kept brief, as much as possible, with more lengthy suggestions or requests posted as separate issues, directly in the submission repository. A link-back to those issues in the `REVIEW` is helpful.
 
@@ -61,17 +61,17 @@ When the reviewers are satisfied with the improvements, we ask that they confirm
 
 ## After acceptance
 
-When a submission is accepted, we ask that the authors create an archive (on [Zenodo](https://zenodo.org/), [fig**share**](https://figshare.com/), or other) and post the archive DOI in the `REVIEW` issue. The editor should run the command `@whedon set <archive doi> as archive`, and ping the EiC for final processing.
+When a submission is accepted, we ask that the authors create an archive (on [Zenodo](https://zenodo.org/), [fig**share**](https://figshare.com/), or other) and post the archive DOI in the `REVIEW` issue. The editor should run the command `@editorialbot set <archive doi> as archive`, and ping the EiC for final processing.
 
 Steps:
-- Get a new proof with the `@whedon generate pdf` command.
+- Get a new proof with the `@editorialbot generate pdf` command.
 - Download the proof, check all references have DOIs, follow the links and check the references.
-  - Whedon can help check references with the command `@whedon check references`
+  - Editorialbot can help check references with the command `@editorialbot check references`
 - Give the paper a proof-read and ask authors to fix typos.
 - Ask the author to make a Zenodo archive, and report the DOI in the review thread.
 - Check the Zenodo deposit has the correct metadata (title and author list), and request the author edit it if it doesn’t match the paper.
-- Run `@whedon set <doi> as archive`.
-- Run `@whedon set <v1.x.x> as version` if the version was updated.
+- Run `@editorialbot set <doi> as archive`.
+- Run `@editorialbot set <v1.x.x> as version` if the version was updated.
 - Ping the `@openjournals/joss-eics` team on the review thread letting them know the paper is ready to be accepted.
 
 At that point, the EiC/AEiC will take over to publish the paper.
@@ -148,22 +148,18 @@ This doesn’t mean that you’re the editor, just that you’ve been suggested 
 
 **Step 6: The editor finds >= 2 reviewers**
 
-- Use the list of reviewers: type the command `@whedon list reviewers` or look at list of reviewers in a Google [spreadsheet](https://docs.google.com/spreadsheets/d/1PAPRJ63yq9aPC1COLjaQp8mHmEq3rZUzwUYxTulyu78/edit?usp=sharing)
+- Use the list of reviewers: type the command `@editorialbot list reviewers` or look at list of reviewers in a Google [spreadsheet](https://docs.google.com/spreadsheets/d/1PAPRJ63yq9aPC1COLjaQp8mHmEq3rZUzwUYxTulyu78/edit?usp=sharing)
 - If people are in the review list, the editor can @-mention them on the issue to see if they will review: e.g. `@person1 @person2 can you review this submission for JOSS?`
 - Or solicit reviewers outside the list. Send an email to people describing what JOSS is and asking if they would be interested in reviewing.
 
-**Step 7: Editor tells Whedon to assign the reviewer to the paper**
+**Step 7: Editor tells Editorialbot to assign the reviewer to the paper**
 
-- Use `@whedon assign @reviewer as reviewer`
-- To add a second reviewer use `@whedon add @reviwer2 as reviewer`
-
-```eval_rst
-.. note:: The ``assign`` command clobbers all reviewer assignments. If you want to add an additional reviewer use the ``add`` command.
-```
+- Use `@editorialbot add @reviewer as reviewer`
+- To add a second reviewer you can repeat the same command or use `@editorialbot add @reviewer2 to reviewers`
 
 **Step 8: Create the actual review issue**
 
-- Use `@whedon start review`
+- Use `@editorialbot start review`
 - An issue is created with the review checklist, one per reviewer, e.g. https://github.com/openjournals/joss-reviews/issues/717
 
 **Step 9: Close the pre-review issue**
@@ -197,10 +193,10 @@ As an editor, part of your role is to ensure that submissions you're responsible
 
 Sometimes reviews go quiet, either because a reviewer has failed to complete their review or an author has been slow to respond to a reviewer's feedback. **As the editor, we need you to prompt the author/or reviewer(s) to revisit the submission if there has been no response within 7-10 days unless there's a clear statement in the review thread that says an action is coming at a slightly later time, perhaps because a reviewer committed to a review by a certain date, or an author is making changes and says they will be done by a certain date.**
 
-[Whedon has functionality](https://joss.readthedocs.io/en/latest/whedon.html#reminding-reviewers-and-authors) to remind an author or review to return to a review at a certain point in the future. For example:
+[Editorialbot has functionality](https://joss.readthedocs.io/en/latest/editorial_bot.html) to remind an author or review to return to a review at a certain point in the future. For example:
 
 ```
-@whedon remind @reviewer in five days
+@editorialbot remind @reviewer in five days
 ```
 
 ## Out of office
